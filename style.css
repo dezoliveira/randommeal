@@ -5,6 +5,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--text-color);
+}
+
+:root{
+  --primary-color: #6C2B20;
+  --secondary-color: #FDB560;
+  --text-color: #D2E0DD;
 }
 
 body{
@@ -13,9 +20,8 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-/*   font-family: 'Rubik', sans-serif; */
   font-family: 'Karla', sans-serif;
-  background-color: #f7fff7;
+  background-color: var(--primary-color);
 }
 
 .container{
@@ -32,17 +38,20 @@ body{
 }
 
 .container button{
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
   padding: 10px 15px;
-  color: #fff;
-  background-color: #ff6b6b;
+  color:blanchedalmond;
+  background-color: var(--secondary-color);
   border: none;
   border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .container button:hover{
   transform: scale(1.02);
-  background-color: #ff6b6bc2;
+  background-color: #fdb460e1;
+  box-shadow: 5px 5px 15px 0 #2222228e;
 }
 
 .text{
@@ -52,11 +61,17 @@ body{
 
 .text h3{
   padding-top: 15px;
+  font-size: 80px;
 }
 
 .text h5{
   margin: 10px;
 }
+
+.text i{
+  color: blanchedalmond;
+}
+
 
 .meal{
   padding: 100px 0;
@@ -65,10 +80,16 @@ body{
 .meal img{
   width: 100%;
   min-width: 100%;
+  box-shadow: 5px 5px 15px 0 #2222228e;
+  margin-bottom: 10px;
 }
 
 .meal-food{
   display: flex;
+}
+
+.meal-food h5, .meal-video h5{
+  color: var(--secondary-color);
 }
 
 .meal-info ul{
@@ -86,6 +107,10 @@ body{
   padding-top: 30px;
 }
 
+.meal-info strong{
+  color: var(--secondary-color);
+}
+
 .meal-instructions{
   max-width: 70%;
   padding: 0 40px;
@@ -100,7 +125,7 @@ body{
 .meal-instructions h4{
   font-size: 42px;
   font-weight: 700;
-  color: #ff6b6b;
+  color: var(--secondary-color);
 }
 
 .meal-video h5{
